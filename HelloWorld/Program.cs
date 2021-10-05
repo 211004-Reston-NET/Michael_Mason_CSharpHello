@@ -19,15 +19,15 @@ namespace HelloWorld
         */
         static void Main(string[] args)
         {
-            string name = "What is your name?";
-            string x;
-            Console.WriteLine(name);
-            x = Console.ReadLine();
-            if (x == string.Empty)
+            string userInput = "What is your name?";
+            string name;
+            Console.WriteLine(userInput);
+            name = Console.ReadLine();
+            if (name == string.Empty)
             {
-                x = "World";
+                name = "World";
             }
-            Console.WriteLine($"Hello {x}");
+            Console.WriteLine($"Hello {name}");
 
             /*
                 House house = new House();
