@@ -19,18 +19,18 @@ namespace HouseFunction
         // property/accessors, mutators
         public string Owner 
         { 
-            get { return owner; }
-            set { owner = value; }
+            get => owner;
+            set => owner = value;
         }
         public string Ghost
         { 
-            get { return ghost; } 
-            set { ghost = value; } 
+            get => ghost;
+            set => ghost = value;
         }
         public int RoomCount
         {
-            get { return roomCount; } 
-            set { roomCount = value; } 
+            get => roomCount;
+            set => roomCount = value;
         }
     }
 }

@@ -19,22 +19,21 @@ namespace HelloWorld
         */
         static void Main(string[] args)
         {
-            string userInput = "What is your name?";
-            string name;
-            Console.WriteLine(userInput);
-            name = Console.ReadLine();
-            if (name == string.Empty)
-            {
-                name = "World";
-            }
-            Console.WriteLine($"Hello {name}");
+            House house = new House();
 
-            /*
-                House house = new House();
-                Console.WriteLine($"Haunted house owner: {house.Owner}");
-                Console.WriteLine($"Scary ghost name: {house.Ghost}");
-                Console.WriteLine($"Hiding in {house.RoomCount} rooms");
-            */
+            string userInput = "What is the Haunted House owner's name?";
+            Console.WriteLine(userInput);
+            string name = Console.ReadLine();
+            
+            if (name != string.Empty)
+            {
+                house.Owner = name;
+            }
+
+            Console.WriteLine($"{house.Owner} is hiding from {house.Ghost} in {house.RoomCount} rooms");
+
+            house.Ghost = "Harry Houdini";
+            Console.WriteLine($"{house.Ghost} just appeared!");
         }
     }
 }
